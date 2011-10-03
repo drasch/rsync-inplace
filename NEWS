@@ -1,0 +1,31 @@
+rsync changes since last release
+
+  ENHANCEMENTS:
+
+    * The --delete-after option now implies --delete. (Wayne Davison)
+
+    * The --suffix option can now be used with --backup-dir. (Michael
+      Zimmerman)
+
+  BUG FIXES:
+  
+    * Fix "forward name lookup failed" errors on AIX 4.3.3.  (John
+      L. Allen, Martin Pool)
+
+    * Fix compilation on Tru64.  (Albert Chin, Zoong Pham)
+
+    * Better handling of some client-server errors.  (Martin Pool)
+
+    * When -e is specified along with an rsyncd url, the client should
+      get a warning but it should not be treated as an error.  (Bill
+      Nottingham)
+
+      http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=62489
+
+  INTERNAL:
+
+    * Many code cleanups and improved internal documentation.  (Martin 
+      Pool, Nelson Beebe)
+
+    * More test cases.  (Martin Pool)
+
